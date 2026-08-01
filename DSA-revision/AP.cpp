@@ -8,13 +8,22 @@ int main(){
     cin>>n;
     for(int i=1;i<=2*n-1;i += 2)//Arithmatic progresssion 
     {
-        cout<<i<<endl;
+        cout<<i<<" ";
     }
     int a = 1;
+    cout<<endl;
     for(int i= 1;i<=n ; i++)//GP with common ration 2
     {
-        cout<<a<<endl;
+        cout<<a<<" ";
         a=a*2;
     }
+    cout<<endl;
+    int b=100;
+    for(;b>0;)//number series 100 to 0 with common difference -3 
+    {
+        cout<<b<<" ";
+        b=b-3;
+    }
+
 
 }
