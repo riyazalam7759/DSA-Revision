@@ -25,5 +25,18 @@ int main(){
         b=b-3;
     }
 
+    //reverse a number
+    int m =0;
+    int y = 1234;
+    int revNum =0;
+    while(y>0)
+    {
+        m = y%10;
+        revNum = revNum*10 + m;
+        y = y/10;
+
+    }
+    cout<<endl<<"Reversed Number: "<<revNum;
+
 
 }
