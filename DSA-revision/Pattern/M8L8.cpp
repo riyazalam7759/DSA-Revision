@@ -55,6 +55,14 @@ int main()
         }
         cout<<endl;
     }
+    cout<<endl<<"method 2 to print number pyramid"<<endl;
+    for(int i=1;i<=n;i++)
+    {
+        for(int k=0;k<=n-i;k++) cout<<" ";
+        for(int j=1;j<=i;j++) cout<<j;
+        for(int q=i-1;q>=1;q--) cout<<q;
+        cout<<endl;
+    }
 
 
 }
