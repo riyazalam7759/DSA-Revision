@@ -36,6 +36,26 @@ int main()
        cout<<endl;
     }
 
+    int a=1;
+    cout<<endl<<"Printing Number Pyramid"<<endl;
+    for(int i = 0;i<n;i++)
+    { 
+        a=1;
+        for(int j=0;j<=2*n;j++)
+        {
+            if((i+j)<n || (j-i)>n) cout<<" ";
+            else
+            {
+               
+                cout<<a;
+                if(j<n) a++;
+                else a--;
+                
+            }
+        }
+        cout<<endl;
+    }
+
 
 }
 
