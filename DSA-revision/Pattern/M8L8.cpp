@@ -22,5 +22,20 @@ int main()
         for(int k=0;k<2*i-1;k++) cout<<"*";
         cout<<endl;
     }
+
+    int nst =1;
+    int nsp = n-1;
+    cout<<endl<<"method 3 of pyramid"<<endl;
+    for(int i=0;i<n;i++)
+    {
+
+       for(int j=0;j<nsp;j++) cout<<" ";
+       nsp--;
+       for(int k=0;k<nst;k++) cout<<"*";
+       nst += 2;
+       cout<<endl;
+    }
+
+
 }
 
