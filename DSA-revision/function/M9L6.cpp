@@ -1,4 +1,4 @@
-//triangle
+//printing pascal triangle
 #include<iostream>
 using namespace std;
 int fact(int x)
