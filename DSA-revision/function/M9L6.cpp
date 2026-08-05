@@ -36,6 +36,23 @@ int main()
         cout<<endl;
     }
 
+    cout<<endl<<"optimized pascal triangle"<<endl;
+    
+    /*
+    nC(r+1)=nCr*(n-r)/(r+1)
+    next = curr*(i-j)/(j+1) 
+    */
+   for(int i=0;i<=n;i++)
+   {
+    int curr=1;
+    for(int j=0;j<=i;j++)
+    {
+        cout<<curr<<" ";
+        int next = curr*(i-j)/(j+1);
+        curr = next;
+    }
+    cout<<endl;
+   }
     
 
 }
