@@ -27,7 +27,7 @@ int main()
     swap2(x , y);
     cout<<x<<" "<<y<<endl;
 
-    //just checking 
+    
 
 }
 
