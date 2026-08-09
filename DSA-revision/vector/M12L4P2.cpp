@@ -2,6 +2,20 @@
 #include<vector>
 #include<algorithm>
 using namespace std;
+
+void change(vector<int> a)
+{
+    a[0]=100;
+    for(int i=0;i<a.size();i++)
+    cout<<a[i]<<" ";
+    cout<<endl;
+}
+
+void change2(vector<int> &a)
+{
+    a[0]=100;
+}
+
 int main()
 {
     vector<int> v;
@@ -23,6 +37,24 @@ int main()
     {
         cout<<v.at(i)<<" ";
     }
+    cout<<endl<<endl<<"passing vector to the functions ";
 
+    vector<int> v2;
+    v2.push_back(50);
+    v2.push_back(51);
+    v2.push_back(52);
+    cout<<endl<<" changed element :";
+    change(v2);//this passing of vector is pass by values
+    cout<<" there wont be any changes :";//cout it goes pass by value 
+    
+    for(int i=0;i<v2.size();i++)
+     cout<<v2[i]<<" ";
+
+    cout<<endl<<" change2 will change the original vector :";//cause this passing is pass by reference 
+    change2(v2);
+
+    for(int i=0;i<v2.size();i++)
+     cout<<v2[i]<<" ";
+    
 }
 
