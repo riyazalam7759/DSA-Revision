@@ -31,6 +31,19 @@ int main()
     }
     display(v2);
     cout<<endl<<" reversing array using two pointers "<<endl;
+    int i = 0;
+    int j=v1.size()-1;
+    while(j>i)
+    {
+        int temp=v1[i];
+        v1[i]=v1[j];
+        v1[j]=temp;
+        i++;
+        j--;
+    }
+    //reverse(v1.begin(),v1.end()) => this can also reverse the array this is built in function
+
+    display(v1);
 
 }
 
