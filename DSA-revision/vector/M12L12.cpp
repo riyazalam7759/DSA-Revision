@@ -42,6 +42,18 @@ int main()
             k++;
             j++;
         }
+        if(i>=5)
+        {
+            arr[k]=arr2[j];
+            j++ ;
+            k++;
+        }
+        if(j>=7)
+        {
+            arr[k]=arr1[i];
+            i++;
+            k++;
+        }
     }
      int n=sizeof(arr)/sizeof(arr[0]);
     cout<<endl<<"Merged sorted elements are :";
