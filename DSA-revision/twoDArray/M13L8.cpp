@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
     int rows;
-    cout<<"enter the number of rows or columns :";
+    cout<<"enter the number of rows or columns for square matrix :";
     cin>>rows;
     int arr[rows][rows];
     cout<<endl<<"enter the elements of the matrix :";
