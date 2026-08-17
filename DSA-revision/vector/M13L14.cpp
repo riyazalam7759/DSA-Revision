@@ -1,3 +1,4 @@
+//pascal triangle
 #include<iostream>
 #include<vector>
 using namespace std;
@@ -29,6 +30,36 @@ int main()
         }
         cout<<endl;
     }
+
+    cout<<endl<<"method two for , this method is best :";
+    vector<vector<int>> v2;
+    for(int i=1;i<=rows;i++)
+    {
+        vector<int> a(i);
+        v2.push_back(a);
+    }
+    for(int i=0;i<rows;i++)
+    {
+        for(int j=0;j<=i;j++)
+        {
+            if(j==0 || i==j) v2[i][j]=1;
+            else
+            {
+                v2[i][j]=v2[i-1][j-1]+v2[i-1][j];
+            }
+        }
+    }
+    cout<<endl<<"printing pascal triangle by second method :"<<endl;
+
+    for(int i=0;i<rows;i++)
+    {
+        for(int j=0;j<=i;j++)
+        {
+            cout<<v2[i][j]<<" ";
+        }
+        cout<<endl;
+    }
+
 
 
 
