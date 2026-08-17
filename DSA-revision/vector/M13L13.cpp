@@ -32,11 +32,7 @@ int main()
     cout<<"total number of columns in first rows :"<<v[1].size()<<endl;//=>2
     cout<<"total number of columns in second rows :"<<v[2].size()<<endl;//=>5
     
-    
-
-    
-    
-
+    vector<vector<int>> v4(3,vector<int>(4,100));//=> v4 has 3 rows and 4 columns and each element is 100
 
 }
 
