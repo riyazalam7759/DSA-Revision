@@ -27,6 +27,13 @@ int main()
 
     cout<<v[1][1]<<endl;//=>5
 
+    cout<<" total number of rows :"<<v.size()<<endl;
+    cout<<"total number of columns in zeroth rows :"<<v[0].size()<<endl;//=>3
+    cout<<"total number of columns in first rows :"<<v[1].size()<<endl;//=>2
+    cout<<"total number of columns in second rows :"<<v[2].size()<<endl;//=>5
+    
+    
+
     
     
 
