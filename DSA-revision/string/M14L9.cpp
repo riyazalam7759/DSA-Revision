@@ -25,7 +25,11 @@ int main()
     if(anag==true) cout<<"s and t are anagaram ";
     else cout<<"s and t are not anagram :";
 
-
+/* 
+or direct we can comare this way without applying loop
+if(s==t) cout<<"strings are anagram";;
+else cout<<"strings are not anagram "
+*/
 
 
 }
