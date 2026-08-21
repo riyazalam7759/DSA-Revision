@@ -1,5 +1,6 @@
 #include<iostream>
 #include<string>
+#include<algorithm>
 using namespace std;
 int main()
 {
@@ -25,6 +26,17 @@ int main()
     
     str2="stuv"+str2;
     cout<<endl<<str2;
+
+    cout<<endl<<"reversing of string ";
+    string str4="abcdefg";
+    reverse(str4.begin(),str4.end());
+    cout<<endl<<str4;
+    reverse(str4.begin()+2,str4.end());//reverese from index 2 to end 
+    cout<<endl<<str4;
+    reverse(str4.begin()+1,str4.end()-1);//reverse from index 1 to second last index
+    cout<<endl<<str4;
+    reverse(str4.begin()+2,str4.begin()+5);//reversing from index 2 to index 4
+    cout<<endl<<str4;
 
 
 }
