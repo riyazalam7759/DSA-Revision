@@ -20,5 +20,6 @@ int main()
     }
     cout<<"mximum number is :"<<max;
     cout<<" and its index is :"<<idx;
+    cout<<endl<<arr[3][4];//=>8
 
 }
