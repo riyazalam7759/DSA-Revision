@@ -1,4 +1,4 @@
-
+//this method will work if array has unique elements 
 #include<iostream>
 #include<string>
 #include<vector>
