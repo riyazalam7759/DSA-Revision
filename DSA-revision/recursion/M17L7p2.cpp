@@ -6,7 +6,7 @@ using namespace std;
 
 void subStringPermutations(string s,string ans)
 {
-    if(s.size()==0)
+    if(s.size()==0)//or s==""
     {
         cout<<ans<<endl;
         return;
