@@ -1,4 +1,4 @@
-
+//print all the increasing subsequences of length k from first n natural numbers
 #include <iostream>
 #include <string>
 #include <vector> 
