@@ -20,12 +20,12 @@ void storeSubset(string original ,string ans  , vector<string> &v, bool flag)
         return; //taaki neeche ki do conditions na chale
     }
     char dh=original[1];
-    if(ch==dh)
+    if(ch==dh)//duplicate character
     {
         if(flag==true) storeSubset(original.substr(1),ans+ch,v,true);
         storeSubset(original.substr(1),ans,v,false);
     }
-    else
+    else//no duplicate 
     {
         if(flag==true) storeSubset(original.substr(1),ans+ch,v,true);
         storeSubset(original.substr(1),ans,v,true);
