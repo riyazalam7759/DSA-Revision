@@ -24,7 +24,7 @@ void binStr(int n,int i,string s)
         binStr(n,i+1,s+'0');
     }  
 }
-void binStrWoutcon1(string s, int n)
+void binStrWoutcon1(string s, int n)//this is the main functoin
 {
     if(s.size()==0)
     {
