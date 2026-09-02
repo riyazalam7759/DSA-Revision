@@ -24,6 +24,19 @@ void binStr(int n,int i,string s)
         binStr(n,i+1,s+'0');
     }  
 }
+void binStrWoutcon1(string s, int n)
+{
+    if(s.size()==0)
+    {
+        cout<<s<<endl;
+        return;
+    }
+    binStrWoutcon1(s+'0',n);
+    if(s.size()==0) binStrWoutcon1(s+'1',n);
+    if(s[s.size()-1]=='0') binStrWoutcon1(s+'1',n);
+    //or we can write for both if conditon line in one line 
+    //if(s.size()==0 || s[s.size()-1]=='0') binStrWoutcon1(s+'1',n);
+}
 
 int main()
 {
