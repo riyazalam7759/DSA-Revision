@@ -1,4 +1,4 @@
-//finding square of a number using binary search 
+//finding square root of a number using binary search 
 #include<iostream>
 using namespace std;
 int main()
