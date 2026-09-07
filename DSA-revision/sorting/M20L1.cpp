@@ -56,6 +56,8 @@ void divideNdConq(vector<int> &v)
     divideNdConq(v1);
     divideNdConq(v2);
     merge(v1,v2,v);  
+    v1.clear();//deleting the vector to free up memory
+    v2.clear();
 }
 int main()
 {
