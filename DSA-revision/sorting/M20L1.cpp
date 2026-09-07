@@ -41,26 +41,35 @@ void merge(vector<int> &v1,vector<int> &v2,vector<int> &res)
     }
 
 }
+void divideNdConq(vector<int> &v)
+{
+    if(v.size()==1) return;
+    int a=v.size()/2;
+    int b=v.size()-a;
+    vector<int> v1(a);
+    vector<int> v2(b);
+    for(int i=0;i<a;i++)
+     v1[i]=v[i];
+    for(int i=0;i<b;i++)
+     v2[i]=v[a+i];
+    
+    divideNdConq(v1);
+    divideNdConq(v2);
+    merge(v1,v2,v);  
+}
 int main()
 {
-    vector<int> v1;
-    v1.push_back(1);
-    v1.push_back(4);
-    v1.push_back(5);
-    v1.push_back(8);
-   
-    vector<int> v2;
-     v2.push_back(2);
-    v2.push_back(3);
-    v2.push_back(6);
-    v2.push_back(7);
-    v2.push_back(10);
-    v2.push_back(12);
-   
-    int n1=v1.size();
-    int n2=v2.size();
-    vector<int> res(n1+n2);
-    merge(v1,v2,res);
-    for(int i=0;i<res.size();i++)
-    cout<<res[i]<<" ";
+    vector<int> v;
+    v.push_back(1);
+    v.push_back(4);
+    v.push_back(5);
+    v.push_back(8);
+    v.push_back(6);
+    v.push_back(7);
+    v.push_back(0);
+    v.push_back(2);
+
+    divideNdConq(v);
+    for(int i=0;i<v.size();i++)
+    cout<<v[i]<<" "; 
 }
