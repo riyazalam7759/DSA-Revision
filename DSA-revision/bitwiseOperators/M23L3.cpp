@@ -10,7 +10,7 @@ string decimalToBinary(int num)
       result='0'+result;
     else 
       result='1'+result;
-    num /=2;
+    num /=2;//in place of this we can use right shift num=num>>1;
    }
     return result;
 }
