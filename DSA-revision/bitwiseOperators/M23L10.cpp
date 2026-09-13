@@ -1,4 +1,4 @@
-//finding two numbers which are present only once in the array 
+//finding two numbers which are present only once in the array  
 #include <iostream>
 using namespace std;
 void findUnique(int arr[], int n)
