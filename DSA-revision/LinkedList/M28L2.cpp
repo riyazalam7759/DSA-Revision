@@ -23,5 +23,7 @@ int main()
     b.next=&c;
     c.next=&d;
     d.next=NULL;
+    cout<<a.val;
+    cout<<a.next;
 }
 
