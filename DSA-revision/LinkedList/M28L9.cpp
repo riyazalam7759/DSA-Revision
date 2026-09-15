@@ -11,7 +11,6 @@ class Node
         this->val=val;
         this->next=NULL;
       }
-
 };
 class LinkedList
 {
@@ -35,7 +34,6 @@ class LinkedList
             tail=temp;
         }
         size++;
-
     }
     void display()
     {
@@ -66,7 +64,6 @@ class LinkedList
         else if(idx==size) insertAtEnd(val);
         else 
         {
-           
             Node *temp=new Node(val);
             Node *t=head;
             for(int i=0;i<idx-1;i++)
@@ -90,8 +87,5 @@ int main()
     ll.insertAtHead(30);
     ll.display();
     ll.insertAtIdx(2,50);
-    ll.display();
-
-
-    
+    ll.display(); 
 }
