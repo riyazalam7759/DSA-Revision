@@ -1,4 +1,5 @@
-
+//impletation of stack using array 
+//we can also use vector in place of array
 #include <iostream>
 using namespace std;
 
@@ -42,6 +43,14 @@ class Stack
     int size()
     {
         return idx+1;
+    }
+    void display()
+    {
+        for(int i=0;i<=idx;i++)
+        {
+            cout<<arr[i]<<" ";
+        }
+        cout<<endl;
     }
 };
 
