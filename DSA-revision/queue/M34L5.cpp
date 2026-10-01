@@ -46,8 +46,10 @@ class Queue
             cout<<"queue is empty UNDERFLOW so cant perform pop operation "<<endl;
             return;
         }
+        Node* temp=head;
         head=head->next;
         size--;
+        delete(temp);//this will delete the actual front node which was previously head
     }
     int front()
     {
