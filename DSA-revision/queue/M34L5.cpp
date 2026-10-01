@@ -43,7 +43,7 @@ class Queue
     {
         if(size==0)
         {
-            cout<<"queue is empty UNDERFLOW "<<endl;
+            cout<<"queue is empty UNDERFLOW so cant perform pop operation "<<endl;
             return;
         }
         head=head->next;
@@ -87,6 +87,7 @@ class Queue
 int main()
 {
       Queue q;
+    q.pop();
     q.push(10);
     q.push(20);
     q.push(30);
