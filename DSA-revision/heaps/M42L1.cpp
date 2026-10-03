@@ -14,11 +14,19 @@ int main()
     pq.push(5);
     cout<<pq.top()<<endl;//=>11
     pq.pop();
-    cout<<pq.top();//=>10
+    cout<<pq.top()<<endl;//=>10
     //if you search for the other element then you have to do like stack pop and search
     
      //top() => O(1)
      //push(x) => O(logN)
      //pop() => O(logN)
 
+     //when to use heap
+     /*
+     Kth largest , smallest 
+     top K frequent 
+     closest K
+     At any point of of time
+     Maximum or Minimum element are required 
+     */
 }
