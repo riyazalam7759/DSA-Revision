@@ -1,4 +1,4 @@
-
+//just impleneting tree
 #include<iostream>
 using namespace std;
 class Node
