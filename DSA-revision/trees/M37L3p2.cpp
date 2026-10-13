@@ -25,7 +25,11 @@ int levels(Node* root)
 void printLevelWise(Node* root,int n,int level)
 {
     if(root==NULL) return;
-    if(n==level) cout<<root->val<<" ";
+    if(n==level)
+    {
+         cout<<root->val<<" ";
+         return;
+    }
     printLevelWise(root->left,n+1, level);
     printLevelWise(root->right,n+1, level);
 }
