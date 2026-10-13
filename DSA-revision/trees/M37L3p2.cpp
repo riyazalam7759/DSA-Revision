@@ -54,8 +54,8 @@ int main()
     d->left=h;
     f->right=i;
     cout<<endl;
-    int l=levels(a);
-    for(int i=1;i<=l;i++)
+    int TotalNoOfLevels=levels(a);
+    for(int i=1;i<=TotalNoOfLevels;i++)
     {
         printLevelWise(a,1,i);
         cout<<endl;
