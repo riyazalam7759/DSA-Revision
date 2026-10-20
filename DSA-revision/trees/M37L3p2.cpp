@@ -1,4 +1,4 @@
-//printing all the elements levelwise
+//printing all the elements levelwise from left to right
 #include<iostream>
 using namespace std;
 class Node
