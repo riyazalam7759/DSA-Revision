@@ -59,13 +59,11 @@ void printLevelOrder(Node* root)
     }
     cout<<endl;
 }
-
 int main()
 {
     //INT_MIN => refers to NULL
     int arr[]={1,2,3,4,5,INT_MIN,6,INT_MIN,INT_MIN,7,8,9,INT_MIN};
     int n=sizeof(arr)/sizeof(arr[0]);
     Node* root=construct(arr,n);
-    printLevelOrder(root);
-    
+    printLevelOrder(root); 
 }
