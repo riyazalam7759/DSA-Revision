@@ -1,5 +1,4 @@
-//tower of Hanoi 
-//M17L3
+//tower of Hanoi M17L3
 #include <iostream>
 using namespace std;
 void Hanoi(int n,char a, char b,char c)
@@ -11,7 +10,8 @@ void Hanoi(int n,char a, char b,char c)
 }
 
 int main()
-{
+{   //A->source , B->helper , C->destination
+    cout<<"tower of hanoi :"<<endl;
     Hanoi(5,'A','B','C');
     return 0;
 }
